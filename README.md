@@ -24,9 +24,3 @@ https://api.telegram.org/bot<token>/setwebhook?url=https://harchi-harchi.rhcloud
 
 Example: https://api.telegram.org/bot2410172AGLGw1-P8Djir3ngaWDF-_Cf5Nzx-47Q/setwebhook?url=https://phpdontedit-alirezapt.rhcloud.com/index.php
 ```
-
-# رفع مشکل 
-[alireza_PT](https://telegram.me/cliapi)
-
-# رفع مشکل /سوال 
-[pmresan](https://telegram.me/alireza_pt_bot)
