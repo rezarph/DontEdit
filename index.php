@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','خخخخخخخخخخخخخخخخخخخ');
+define('API_KEY','233092304:AAE_pdn31T2d2bfvbiMan249N7nd6hZIRDE');
 $admin = "134139736";
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -31,7 +31,7 @@ if (isset($update->edited_message)){
   $edname = $editm->from->first_name;
   $jsu = json_decode(file_get_contents(__DIR__.'/users/'.$eid.'.json'));
   $text = "<b>".$edname."</b>\nمن ديدم که چی گفتی بازم اديت کنی ميفهمم
-  گفتی:
+  گفتی :
 ".$jsu;
   $id = $update->edited_message->chat->id;
   bot('sendmessage',[
@@ -45,7 +45,7 @@ if (isset($update->edited_message)){
   //$up = file_get_contents(__DIR__.'/users/'.$eid.'.json');
   //str_replace("edited_message","message",$up);
 }elseif(preg_match('/^\/([Ss]tart)/',$text1)){
-  $text = "به ربات اديت نکن\nخوش آمديد\nبرای اد کردن من به گروه بر روی لينک زير بزنيد\nhttps://telegram.me/DontEdit_RoBot?startgroup=new";
+  $text = "<code>به ربات ادیت نکن خوش آمدید</code>";
   bot('sendmessage',[
     'chat_id'=>$chat_id,
     'text'=>$text,
@@ -53,10 +53,10 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'Admin','url'=>'https://telegram.me/reza_rph']
+          ['text'=>'سازنده','url'=>'https://telegram.me/reza_rph']
         ],
         [
-          ['text'=>'Add To Group','url'=>'https://telegram.me/DontEdit_RoBot?startgroup=new']
+          ['text'=>'اد کردن به گروه','url'=>'https://telegram.me/DontEdit_RoBot?startgroup=new']
         ]
       ]
     ])
