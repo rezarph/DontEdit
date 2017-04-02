@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','233092304:AAE_pdn31T2d2bfvbiMan249N7nd6hZIRDE');
+define('API_KEY','233092304:AAHOL0IUhMJww_crlY0NI5GVGEdfXshfHv8');
 $admin = "134139736";
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -53,7 +53,7 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'سازنده','url'=>'https://telegram.me/reza_rph']
+          ['text'=>'سازنده','url'=>'https://telegram.me/rezarph']
         ],
         [
           ['text'=>'اد کردن به گروه','url'=>'https://telegram.me/DontEdit_RoBot?startgroup=new']
